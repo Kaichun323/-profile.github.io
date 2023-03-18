@@ -73,10 +73,11 @@ header{
  }
  .b{
     min-height: 400px;
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
     padding: 20px;
     text-align: center;
-    background-color: #bec8e2;
+    background-color: #c8cfe1;
+    border-radius: 5px;
  }
  .list{
      color: rgb(20, 20, 10);
@@ -129,7 +130,7 @@ header{
     border: 0px;
 }
 .btn:hover{
-    background-color: rgb(130, 171, 206)
+    background-color: rgb(255, 255, 255)
 }
 .call{
     background-color: #bec8e2;
@@ -150,4 +151,38 @@ header{
 }
 .link a{
     color: #000000;
+}
+.date{
+    display: flex;
+    margin: 25px;
+    justify-content: flex-start;
+}
+.d{
+    min-height: 180px;
+    padding: 25px;
+    text-align: center;
+    background-color:#c8cfe1;
+    border-radius: 5px;
+}
+.ex{
+    color: rgb(20, 20, 10);
+     font-size: 30px;
+     background-color: rgb(100, 161, 236);
+     border-radius: 20px;
+     text-align: center;
+     margin: 10px 0px;
+     display: inline-block;
+     padding: 5px;
+}
+.number{
+    width: 15%;
+    text-align: center;
+}
+.time{
+    /*margin: 5px;*/
+    text-align:left;
+    width: 85%;
+}
+.time h4{
+    margin: 20px;
 }

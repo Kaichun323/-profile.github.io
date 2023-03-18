@@ -1,0 +1,19 @@
+.checked{
+    text-decoration: line-through;            /*滑鼠點到畫線*/
+    background-color: rgb(189, 188, 196);   
+}
+li:hover{
+    background-color: rgb(253, 251, 127);    /*數標滑道區塊上變顏色*/
+}
+li{
+    background-color: antiquewhite;
+    margin-bottom: 5px;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+.delete{
+    position: absolute;        /*絕對定位*/
+    right: 15px;               /*距離最右邊多少*/
+}
