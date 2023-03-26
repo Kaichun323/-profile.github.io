@@ -47,8 +47,9 @@ header{
 .a{
     display:flex;
     justify-content: space-evenly;
-    margin: 50px 0px;
+    padding: 50px 0px;
     align-items: center;
+    background-color: #b0bcda;
 }
 
 .pic img{
@@ -76,8 +77,7 @@ header{
     /* margin: 20px 0px; */
     padding: 20px;
     text-align: center;
-    background-color: #c8cfe1;
-    border-radius: 5px;
+    background-color:#b0bcda;
  }
  .list{
      color: rgb(20, 20, 10);
@@ -133,17 +133,18 @@ header{
     background-color: rgb(255, 255, 255)
 }
 .call{
-    background-color: #bec8e2;
+    background-color: #ffffff;
     border-radius: 20px;
     text-align: center;
     margin: 15px 0px;
     padding: 10px;
-    height: 300px;
+    height: 150px;
     width: 300px;
 }
 .c{
     display: flex;
     justify-content: center;
+    background-color: #b0bcda;
 }
 .link{
     color: #656468;
@@ -161,7 +162,7 @@ header{
     min-height: 180px;
     padding: 25px;
     text-align: center;
-    background-color:#c8cfe1;
+    background-color:#b0bcda;
     border-radius: 5px;
 }
 .ex{
@@ -185,4 +186,50 @@ header{
 }
 .time h4{
     margin: 20px;
+    font-size: 20px;
+}
+.e{
+    min-height: 180px;
+    padding: 25px;
+    text-align: center;
+    background-color:#b0bcda;
+    border-radius: 5px;
+}
+.study{
+    color: rgb(20, 20, 10);
+    font-size: 30px;
+    background-color: rgb(100, 161, 236);
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px 0px;
+    display: inline-block;
+    padding: 5px;
+}
+.subject{
+    font-size: 30px;
+    text-align: left;
+    font-weight: bolder;
+}
+.school{
+    display: flex;
+    font-size: 25px;
+}
+.school > div{
+    width: 50%;
+    margin: 0px 50px;
+}
+.school div dl{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.school div dl dd{
+    font-size: 15px;
+}
+.school div dl:hover dd{
+    color: #e0e577;
+}
+.school div dl:hover dt{
+    font-weight: bolder;
+    font-size: 30px;
 }
