@@ -5,6 +5,10 @@
     font-family: 'Shantell Sans', cursive;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1,li,a{
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -21,6 +25,9 @@ nav{
     background-color: rgb(8, 8, 3);
 }
 
+.fas{
+    display: none;
+}
 h1{
     font-size: 40px;
 }
@@ -50,6 +57,7 @@ header{
     padding: 50px 0px;
     align-items: center;
     background-color: #b0bcda;
+    flex-direction: row;
 }
 
 .pic img{
@@ -105,6 +113,12 @@ header{
     border-radius: 40px;
     width: 370px;
     height: 320px;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-10px);
+    background-color: #a191e8;
+    color:#e4e4e4;
 }
 .card i{
     font-size: 50px;
@@ -118,7 +132,7 @@ header{
 .text{
     display: flex;
     height: 200px;
-    align-items: center;
+    align-items: flex-start;
 }
 .btn{
     color: #000000;
@@ -145,10 +159,16 @@ header{
     display: flex;
     justify-content: center;
     background-color: #b0bcda;
+    align-items: center;
+}
+.link:hover{
+    transform: translateX(10px);
+    color: #b0bcda;
 }
 .link{
     color: #656468;
     margin: 5px;
+    transition: all 0.3s ease;
 }
 .link a{
     color: #000000;
@@ -233,3 +253,35 @@ header{
     font-weight: bolder;
     font-size: 30px;
 }
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media only screen and (max-width:600px){
+    .fas{
+        display: block;
+        color: #acababf5;
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 300px;
+        background-color: #000000;
+        padding-top: 50px;
+        z-index: 2px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top:25px;
+        left: 35px;
+    }
+}
+    
