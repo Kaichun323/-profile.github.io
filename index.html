@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="w43.css">
     <script src="https://kit.fontawesome.com/2b05b5db73.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="w43.js"></script>
 </head>
 <body>
     <header>
@@ -19,9 +18,9 @@
                 <li><a href = "#experiences">Experiences</a></li>
                 <li><a href = "#skills">Skills</a></li>
                 <li><a href = "#contactMe">Contact</a></li>
-                <i class="fas fa-solid fa-xmark" onclick="close()"></i>
+                <i class="fas fa-solid fa-xmark" onclick="menuClose()"></i>
             </ul>
-            <i class="fas fa-solid fa-bars" onclick="open()"></i>
+            <i class="fas fa-solid fa-bars" onclick="menuOpen()"></i>
         </nav>
     </header>
     <section class="a" id="aboutMe">
@@ -79,120 +78,120 @@
         <div class="school">
             <div>
                 <div class="subject">學科</div>
-                <dl>
-                    <dt>國文</dt>
-                    <dd>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>數學</dt>
-                    <dd>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>自然</dt>
-                    <dd>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>社會</dt>
-                    <dd>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>電腦</dt>
-                    <dd>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </dd>
-                </dl>
-            </div>
-            <div>
-                <div class="subject">運動</div>
-                <dl>
-                    <dt>羽毛球</dt>
-                    <dd>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>排球</dt>
-                    <dd>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>跑步</dt>
-                    <dd>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </dd>
-                </dl>
-                <div class="subject">程式</div>
-                <dl>
-                    <dt>CSS</dt>
-                    <dd>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>HTML</dt>
-                    <dd>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>JavaScript</dt>
-                    <dd>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </dd>
-                </dl>
+                    <dl>
+                        <dt>國文</dt>
+                        <dd>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>數學</dt>
+                        <dd>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>自然</dt>
+                        <dd>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>社會</dt>
+                        <dd>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>電腦</dt>
+                        <dd>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </dd>
+                    </dl>
+                </div>
+                <div>
+                    <div class="subject">運動</div>
+                    <dl>
+                        <dt>羽毛球</dt>
+                        <dd>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>排球</dt>
+                        <dd>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>跑步</dt>
+                        <dd>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </dd>
+                    </dl>
+                    <div class="subject">程式</div>
+                    <dl>
+                        <dt>CSS</dt>
+                        <dd>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>JavaScript</dt>
+                        <dd>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </dd>
+                    </dl>
             </div>
         </div>
     </section>
@@ -213,5 +212,6 @@
             </div>
         </div>
     </section>
+    <script type="text/javascript" src="w43.js"></script>
 </body>
 </html>

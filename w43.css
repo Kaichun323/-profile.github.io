@@ -35,10 +35,24 @@ h1{
 nav ul li{
     display: inline-block;
     padding: 10px;
+    position: relative;
+}
+nav ul li a::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #b0bcda;
+    left: 0px;
+    bottom: 0px;
+    transition: all 0.3s ease;
 }
 
-nav ul li :hover{
+nav ul li a:hover{
     color: rgb(166, 202, 233);
+}
+nav ul li a:hover::after{
+    width: 100%;
 }
 
 header{
@@ -59,7 +73,6 @@ header{
     background-color: #b0bcda;
     flex-direction: row;
 }
-
 .pic img{
     width: 250px;
     height: 250px;
@@ -96,7 +109,7 @@ header{
      margin: 10px 0px;
      display: inline-block;
      padding: 5px;
-    }
+}
  h2{
      text-align: justify; 
  }
@@ -254,7 +267,7 @@ header{
     font-size: 30px;
 }
 section{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -262,17 +275,22 @@ section{
 @media only screen and (max-width:600px){
     .fas{
         display: block;
-        color: #acababf5;
+        color: #fffffff5;
+        font-size: 20px;
     }
     nav ul{
         position: fixed;
         top: 0;
-        right: 0;
+        right: -300px;
         height: 100vh;
         width: 300px;
         background-color: #000000;
         padding-top: 50px;
         z-index: 2px;
+        transition: all 0.5s ease;
+    }
+    nav{
+        padding: 5px 20px 5px 10px;
     }
     nav ul li{
         display: block;
@@ -282,6 +300,49 @@ section{
         position: absolute;
         top:25px;
         left: 35px;
+    }
+    .a{
+        flex-direction: column;
+    }
+    .word{
+        width: 80%;
+        text-align: center;
+    }
+    .pic img{
+        width: 200px;
+        height: 200px;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .card{
+        width: 250px;
+        height: fit-content;
+    }
+    .btn{
+        margin-top: 30px;
+    }
+    .number{
+        width: 50%;
+    }
+    .date{
+        flex-direction: column;
+    }
+    .time{
+        width: 100%;
+    }
+    .number{
+        width: 100%;
+    }
+    .time h4{
+        margin: 15px 0px 0px 0px;
+    }
+    .school{
+        flex-direction: column;
+    }
+    .school > div{
+        width: 100%;
+        margin: 0px;
     }
 }
     

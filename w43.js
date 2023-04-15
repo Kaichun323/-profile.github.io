@@ -1,11 +1,11 @@
 var menu = document.getElementById("menu");
-function open() {
+function menuOpen() {
     menu.style.right = "0";
-    console.log("open");
+    console.log("menuOpen");
 }
-function close() {
+function menuClose() {
     menu.style.right = "-300px";
-    console.log("close");
+    console.log("menuClose");
 }
 console.log(menu);
 console.log("menu");
