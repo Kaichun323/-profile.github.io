@@ -23,6 +23,7 @@ nav{
     padding: 10px 95px;
     align-items: center;
     background-color: rgb(8, 8, 3);
+    z-index: 100;
 }
 
 .fas{
@@ -64,7 +65,13 @@ header{
     background-color: rgba(0,0,0, .35);
     background-blend-mode: multiply;
 }
-
+section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
 .a{
     display:flex;
     justify-content: space-evenly;
@@ -94,7 +101,6 @@ header{
     padding: 5px;
  }
  .b{
-    min-height: 400px;
     /* margin: 20px 0px; */
     padding: 20px;
     text-align: center;
@@ -192,7 +198,6 @@ header{
     justify-content: flex-start;
 }
 .d{
-    min-height: 180px;
     padding: 25px;
     text-align: center;
     background-color:#b0bcda;
@@ -222,7 +227,6 @@ header{
     font-size: 20px;
 }
 .e{
-    min-height: 180px;
     padding: 25px;
     text-align: center;
     background-color:#b0bcda;
@@ -265,12 +269,6 @@ header{
 .school div dl:hover dt{
     font-weight: bolder;
     font-size: 30px;
-}
-section{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 @media only screen and (max-width:600px){
     .fas{
